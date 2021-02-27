@@ -112,7 +112,8 @@ def daemon():
 
 if __name__ == '__main__':
     if len(sys.argv) < 2:
-        print('need param: up/down')
+        print('No arguments, starting daemon...')
+        daemon()
     elif sys.argv[1] == 'up':
         power_up()
     elif sys.argv[1] == 'down':
