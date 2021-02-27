@@ -85,6 +85,7 @@ def daemon():
         def __init__(self):
             center = Foundation.NSDistributedNotificationCenter.defaultCenter()
 
+            # how to use selectors: https://web.archive.org/web/20201124040812/https://lethain.com/how-to-use-selectors-in-pyobjc/
             sel_locked = objc.selector(self.on_locked, signature=b'v@:@')
             center.addObserver_selector_name_object_(self, sel_locked, 'com.apple.screenIsLocked', None)
 
