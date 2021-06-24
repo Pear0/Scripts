@@ -18,6 +18,8 @@ devices_to_power_down = [
     # (vid, pid)
     (0x04d9, 0x0355),  # keyboard
     (0x046d, 0xc092),  # mouse
+
+    (0x05ac, 0x024f),  # drevo keyboard
 ]
 
 
